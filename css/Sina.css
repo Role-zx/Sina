@@ -1,0 +1,1481 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    border-top: 2px solid rgb(247, 140, 0);
+    border-bottom: 1px solid rgb(240, 240, 240);
+    background-color: #fff;
+    padding: 9px;
+    z-index: 11;
+}
+
+.header .header-main {
+    width: 1255px;
+    margin: 0 auto;
+}
+
+.header .header-main .main-left,
+.main-right {
+    display: inline-block;
+    width: 580px;
+    position: relative;
+}
+
+.header .header-main .main-right {
+    float: right;
+}
+
+.header .header-main .main-right::after {
+    clear: both;
+}
+
+.header .header-main .main-left span {
+    display: inline-block;
+    width: 80px;
+    height: 27px;
+    background-image: url("../image/WB_logo.png");
+    background-size: 100% 100%;
+}
+
+.header .header-main .main-left .seek {
+    display: inline-block;
+    vertical-align: 7px;
+    width: 458px;
+}
+
+.header .header-main .main-left .seek .input {
+    width: 100%;
+    height: 27px;
+    margin-left: 25px;
+    border: 1px solid #ccc;
+    background-color: rgb(245, 245, 245);
+    outline: none;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.header .header-main .main-right .icon1,
+.icon2,
+.icon3,
+.icon4 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.header .header-main .main-right .icon1 {
+    background-image: url("../image/icon-shouye.png");
+    background-size: 100% 100%;
+}
+
+.header .header-main .main-right .icon2 {
+    background-image: url("../image/icon-shipin.png");
+    background-size: 100% 100%;
+}
+
+.header .header-main .main-right .icon3 {
+    background-image: url("../image/icon-faxian.png");
+    background-size: 100% 100%;
+}
+
+.header .header-main .main-right .icon4 {
+    background-image: url("../image/icon-youxi.png");
+    background-size: 100% 100%;
+}
+
+.header .header-main .main-right ul {
+    float: right;
+    margin-right: 145px;
+}
+
+.header .header-main .main-right ul::after {
+    clear: both;
+}
+
+.header .header-main .main-right ul li {
+    list-style: none;
+    float: left;
+    margin-left: 25px;
+    line-height: 30px;
+}
+
+.header .header-main .main-right ul li::after {
+    clear: both;
+}
+
+.header .header-main .main-right ul li a {
+    vertical-align: 5px;
+    color: rgb(80, 78, 78);
+    font-size: 14px;
+}
+
+.header .header-main .main-right ul li a:hover {
+    color: orange;
+}
+
+.header .header-main .main-right .header-login {
+    position: absolute;
+    right: 15px;
+    top: 3px;
+}
+
+.header .header-main .main-right .header-login em {
+    font-style: normal;
+    color: #ccc;
+    font-size: 10px;
+    vertical-align: 2px;
+}
+
+.header .header-main .main-right .header-login span a {
+    padding: 8px;
+    width: 30px;
+    font-size: 14px;
+    color: rgb(80, 78, 78);
+}
+
+.header .header-main .main-right .header-login span a:hover {
+    color: orange;
+}
+
+
+.login-panel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -301px;
+    margin-top: -199.5px;
+    width: 602px;
+    height: 399px;
+    border-top: 2px solid orange;
+    background-color: #fff;
+    border-radius: 4px;
+    z-index: 16;
+    display: none;
+}
+
+.login-panel .panel-tab {
+    width: 370px;
+    height: 34.8px;
+    border-bottom: 1px solid rgb(226, 224, 224);
+    margin: 30px auto;
+}
+
+.login-panel .panel-tab a {
+    display: inline-block;
+    color: rgb(58, 57, 57);
+    font-size: 17px;
+    width: 182.5px;
+    height: 34.8px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.login-panel .closePanel {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    color: rgb(119, 119, 119);
+    font-weight: bold;
+}
+
+.login-panel .closePanel:hover {
+    color: orange;
+}
+
+.current {
+    border-bottom: 3px solid rgb(250, 112, 0);
+    font-weight: bold;
+}
+
+.login-panel .formLogin {
+    width: 230px;
+    margin: 0 auto;
+}
+
+.login-panel .formLogin ul li {
+    width: 230px;
+    height: 28px;
+    list-style: none;
+    margin-bottom: 12px;
+    border: 1px solid rgb(194, 192, 192);
+}
+
+.login-panel .formLogin ul li input {
+    width: 230px;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.login-panel .formLogin ul li .fSize {
+    font-size: 12px;
+    width: 200px;
+    vertical-align: 10px;
+}
+
+
+.login-panel .formLogin ul li .userHead,
+.password {
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-top: 6px;
+    margin-left: 5px;
+    margin-right: 8px;
+    line-height: 28px;
+}
+
+.login-panel .formLogin ul li .userHead {
+    background-image: url(../image/icon-zhanghu.png);
+    background-size: 100% 100%;
+}
+
+.login-panel .formLogin ul li .password {
+    background-image: url(../image/icon-mima.png);
+    background-size: 100% 100%;
+}
+
+.login-panel .formLogin ul .gray {
+    font-size: 12px;
+    color: rgb(134, 134, 134);
+    line-height: 28px;
+    margin-top: -7px;
+    border: none;
+}
+
+.login-panel .formLogin ul .gray span {
+    vertical-align: 2px;
+    margin-left: 5px;
+}
+
+.login-panel .formLogin ul .gray a {
+    color: rgb(134, 134, 134);
+    float: right;
+    margin-right: 10px;
+}
+
+.login-panel .formLogin ul .gray a:hover {
+    color: orange;
+}
+
+.login-panel .formLogin ul li #checkbox {
+    width: 12px;
+    height: 12px;
+}
+
+.login-panel .formLogin ul .submit {
+    height: 37px;
+    cursor: pointer;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.login-panel .formLogin ul .submit input {
+    color: #fff;
+    background-color: rgb(247, 132, 25);
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.login-panel .formLogin ul .submit a {
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    background-color: fff;
+    text-align: center;
+    color: #000;
+    line-height: 32px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #ccc;
+    font-size: 14px;
+    border: 1px solid rgb(230, 229, 229);
+}
+
+
+.login-panel .formLogin ul .submit a .before {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-top: 8px;
+    margin-left: -5px;
+    background-image: url(../image/icon-qq.png);
+    background-size: 100% 100%;
+}
+
+.login-panel .formLogin ul .submit a .loginText {
+    vertical-align: 3px;
+    margin-left: 5px;
+}
+
+.login-panel .formLogin .text {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    margin-top: -8px;
+}
+
+.login-panel .formLogin .text a {
+    color: #000;
+}
+
+.login-panel .formLogin .text a:hover {
+    color: orange;
+}
+
+.login-panel .formLogin .text .after::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    background-color: red;
+}
+
+.login-panel .formLogin .qrcodeBox {
+    border: 1px solid #f3f3f3;
+    width: 210px;
+    height: 230px;
+    margin-top: -8px;
+    margin-left: 7px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-panel .formLogin .qrcodeBox .qrcode {
+    display: block;
+    margin: 15px auto;
+}
+
+.login-panel .formLogin .qrcodeBox p {
+    margin-top: -8px;
+    font-size: 14px;
+    color: rgb(63, 62, 62);
+}
+
+.login-panel .formLogin #top {
+    margin-top: 14px;
+}
+
+.login-panel .login-phone {
+    position: absolute;
+    left: -150px;
+    top: -22px;
+    width: 290px;
+    height: 372px;
+    background-image: url(../image/logon-phone.png);
+    background-size: 100% 100%;
+    z-index: -99;
+    display: none;
+}
+
+.masking {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .3;
+    display: none;
+    z-index: 15;
+}
+
+
+
+
+/* 三栏布局 */
+.three_bar {
+    display: block;
+    width: 1155px;
+    /* height: 600px; */
+    margin: 66px auto 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.three_bar .left {
+    /* border: 1px solid #000; */
+    width: 110px;
+    height: 100%;
+    float: left;
+    margin-left: -17px;
+}
+
+
+.three_bar .right {
+    /* border: 1px solid #000; */
+    width: 340px;
+    height: 100%;
+    float: right;
+}
+
+
+/* 登录面板 */
+.three_bar .right .loginBox {
+    width: 340px;
+    height: 326px;
+    background-color: #f2f2f5;
+    margin-bottom: 20px;
+}
+
+.three_bar .right .right_loginPanel {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 286px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.three_bar .right .right_loginPanel .target_phone {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../image/sprite_login.png);
+    background-position: 0px -150px;
+}
+
+.three_bar .right .right_loginPanel .target_code {
+    position: absolute;
+    top: 40px;
+    right: -40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../image/sprite_login.png);
+    background-position: -40px -191px;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin {
+    width: 270px;
+    height: 286px;
+    /*border: 1px solid #CCCCCC;*/
+    margin: 0 auto;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .formLogin_tab {
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 18px;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .formLogin_tab a {
+    /*background-color: red;*/
+    display: inline-block;
+    width: 132.5px;
+    height: 44px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 14px;
+    color: dimgray;
+}
+
+.rightCurrent {
+    border-bottom: 3px solid rgb(250, 112, 0);
+    font-weight: bold;
+    color: #000;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main {
+    width: 270px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .main_user {
+    width: 270px;
+    height: 34px;
+    border: 1px solid #ccc;
+    margin-bottom: 11px;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .main_user .user {
+    width: 245px;
+    height: 28px;
+    /*background-color: red;*/
+    line-height: 34px;
+    margin-left: 8px;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .main_user .user::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../image/icon-zhanghu.png);
+    background-size: 100% 100%;
+    margin-right: 5px;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .password {
+    margin: 0 0 10px 0;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .password .user::before {
+    content: "";
+    background-image: url(../image/icon-mima.png);
+    background-size: 100% 100%;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .main_user .user input {
+    width: 216px;
+    height: 30px;
+    vertical-align: 2px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .main_check {
+    font-size: 12px;
+    color: #696969;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .main_check em {
+    font-style: normal;
+    vertical-align: 3px;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .main_check a {
+    color: #696969;
+    float: right;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .main_check a:hover {
+    color: orange;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .loginBtn {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 34px;
+    background-color: rgb(247, 132, 25);
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .loginBtn a {
+    display: block;
+    width: 100%;
+    height: 28px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 34px;
+    color: #FFf;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .loginBtn a:hover {
+    color: #FFFFFF;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .register a {
+    float: none;
+    color: darkorange;
+    vertical-align: 3px;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .elseLogin {
+    border-top: 1px solid gainsboro;
+    margin-top: 6px;
+    padding-top: 3px;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .elseLogin em {
+    font-style: normal;
+    font-size: 12px;
+    color: #696969;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .elseLogin ul {
+    display: inline-block;
+
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .elseLogin li {
+    display: inline-block;
+    list-style: none;
+    width: 15px;
+    height: 15px;
+    background-color: darkorange;
+    margin-left: 2px;
+    vertical-align: -2px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* content2 */
+.three_bar .right .right_loginPanel .right_formLogin .right_main .main_qeBox {
+    width: 174px;
+    height: 174px;
+    margin: 35px auto;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .main_qrcode {
+    width: 150px;
+    height: 174px;
+    margin: 0 auto;
+}
+
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .main_qrcode img {
+    width: 100%;
+    height: 150px;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .scan {
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 4px;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .scan em {
+    font-style: normal;
+    font-size: 12px;
+    color: #000;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .question {
+    width: 150px;
+    text-align: center;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .question em {
+    font-style: normal;
+    font-size: 12px;
+    color: grey;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .question a {
+    font-size: 12px;
+    color: darkorange;
+}
+
+
+/*content3*/
+.three_bar .right .right_loginPanel .right_formLogin .right_main .phoneNumber .user::before {
+    content: "";
+    background-image: url(../image/icon-phone.png);
+    background-size: 100% 100%;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .phoneText {
+    border: none;
+}
+
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .phoneText a {
+    display: inline-block;
+    width: 141px;
+    height: 32px;
+    border: 1px solid #DCDCDC;
+    font-size: 12px;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 2px;
+    background-color: #F2F2F5;
+    color: #000;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .phoneText .note {
+    width: 117px;
+    height: 32px;
+    border: 1px solid #ccc;
+    float: right;
+    border-radius: 2px;
+}
+
+.three_bar .right .right_loginPanel .right_formLogin .right_main .phoneText .note input {
+    display: block;
+    margin: 0 auto;
+    width: 85px;
+    height: 29px;
+    font-size: 12px;
+    padding-top: 2px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+
+/* 微博新鲜事 */
+.three_bar .right .WBNews {
+    width: 340px;
+    height: 544.2px;
+    background-color: #f2f2f5;
+    margin-bottom: 20px;
+    border-top: 1px solid red;
+}
+
+.three_bar .right h2 {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 17px;
+}
+
+.three_bar .right .WBNews .news_main {
+    width: 300px;
+    height: 430px;
+    margin: 0 auto;
+}
+
+.three_bar .right .WBNews .news_main .news {
+    width: 300px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.three_bar .right .WBNews .news_main .news .news_title {
+    width: 170px;
+    height: 70px;
+    float: left;
+}
+
+.three_bar .right .WBNews .news_main .news .news_title a {
+    display: block;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 7px;
+}
+
+.three_bar .right .WBNews .news_main .news .news_title a:hover {
+    color: orange;
+}
+
+.three_bar .right .WBNews .news_main .news .news_title span {
+    font-size: 12px;
+    color: #696969;
+}
+
+.three_bar .right .WBNews .news_main .news .news_img {
+    width: 120px;
+    height: 70px;
+    float: right;
+}
+
+.three_bar .right .WBNews .news_main .news .news_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.three_bar .right .seemore {
+    border-top: 1px solid #ccc;
+    width: 340px;
+    height: 34px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.three_bar .right .seemore a {
+    font-size: 13px;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+.three_bar .right .seemore a:hover {
+    color: orange;
+}
+
+
+
+
+
+
+/* 微博热点 */
+.three_bar .right .WBHot {
+    width: 340px;
+    height: 444.2px;
+    background-color: #f2f2f5;
+    margin-bottom: 20px;
+    border-top: 1px solid red;
+}
+
+.three_bar .right .WBHot .hotBox {
+    width: 300px;
+    height: 330px;
+    margin: 0 auto;
+}
+
+.three_bar .right .WBHot .hotBox .hotBox_hot {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+
+.three_bar .right .WBHot .hotBox .hotBox_hot a img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+}
+
+.three_bar .right .WBHot .hotBox .hotBox_hot .hot_text {
+    width: 238px;
+    float: right;
+}
+
+.three_bar .right .WBHot .hotBox .hotBox_hot .hot_text a {
+    display: inline-block;
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.three_bar .right .WBHot .hotBox .hotBox_hot .hot_text a:hover {
+    color: orange;
+}
+
+.three_bar .right .WBHot .hotBox .hotBox_hot .hot_text p {
+    color: grey;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* 微博找人 */
+.three_bar .right .fined {
+    width: 340px;
+    background-color: #f2f2f5;
+    border-top: 1px solid red;
+}
+
+.three_bar .right .fined h3 {
+    font-size: 17px;
+    font-weight: 300;
+    color: grey;
+    margin-bottom: 12px;
+}
+
+.three_bar .right .fined a {
+    color: #000;
+    font-size: 12px;
+}
+
+.three_bar .right .fined a:hover {
+    color: orange;
+}
+
+.three_bar .right .fined ul {
+    margin-bottom: 10px;
+}
+
+.three_bar .right .fined li {
+    list-style: none;
+    width: 96px;
+    height: 15px;
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.three_bar .right .fined li .ficon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: 100% 100%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.three_bar .right .fined .fined_main {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.three_bar .right .fined .fined_main .fined_content {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.three_bar .right .fined .fined_main .borderNone {
+    border: none;
+    padding-bottom: 1px;
+}
+
+.three_bar .right::before {
+    content: "";
+    clear: both;
+}
+
+
+
+/* 左侧导航栏 */
+.three_bar .left .left_nav ul li {
+    list-style: none;
+    margin-bottom: 3px;
+}
+
+.three_bar .left .left_nav ul li a {
+    display: block;
+    width: 111px;
+    height: 40px;
+    color: #000;
+    text-align: center;
+    line-height: 39px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.three_bar .left::after {
+    content: "";
+    clear: both;
+}
+
+.leftNavCurrent {
+    color: #fff !important;
+    background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
+}
+
+.three_bar .center {
+    /*border: 1px solid #000;*/
+    width: 660px;
+    margin-left: 123px;
+}
+
+.three_bar .center::before {
+    clear: both;
+}
+
+.three_bar .center .autoPlayBox {
+    position: relative;
+    width: 660px;
+    height: 300px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.three_bar .center .autoPlayBox ul {
+    width: 4000px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.three_bar .center .autoPlayBox ul li {
+    display: inline-block;
+    list-style: none;
+    width: 660px;
+    height: 300px;
+    position: relative;
+    margin-left: -5px;
+}
+
+
+.three_bar .center .autoPlayBox ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.three_bar .center .autoPlayBox ol {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+.three_bar .center .autoPlayBox ol li {
+    list-style: none;
+    width: 9px;
+    height: 9px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+
+.three_bar .center .autoPlayBox ul li .playText {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 48px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    text-indent: 10px;
+    line-height: 48px;
+}
+
+.three_bar .center .autoPlayBox ol li.playCurrent {
+    background-color: orange;
+}
+
+.three_bar .center .unread {
+    display: inline-block;
+    width: 660px;
+    height: 36px;
+    background-color: #fffdec;
+    color: orangered;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.three_bar .center .unread em {
+    font-size: 14px;
+    font-style: normal;
+}
+
+.three_bar .center .unread a {
+    float: right;
+    margin-right: 15px;
+    font-size: 16px;
+    color: grey;
+}
+
+.three_bar .center .unread a:hover {
+    color: red;
+}
+
+/*新闻主体*/
+.three_bar .center .newsMain {
+    width: 660px;
+
+}
+
+/* 模块一 */
+.three_bar .center .newsMain .newsModule {
+    position: relative;
+    width: 660px;
+    height: 184px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.three_bar .center .newsMain .newsModule .news_left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 326px;
+    height: 184px;
+}
+
+.three_bar .center .newsMain .newsModule .news_left img {
+    width: 326px;
+    height: 184px;
+}
+
+.three_bar .center .newsMain .newsModule .news_right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 308px;
+    height: 184px;
+    cursor: pointer;
+}
+
+.three_bar .center .newsMain .newsModule .news_right h3 {
+    width: 308px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.three_bar .center .newsMain h3 a {
+    color: orange;
+    font-size: 13px;
+}
+
+.three_bar .center .newsMain .author {
+    color: #696969;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.three_bar .center .newsMain em {
+    font-style: normal;
+
+}
+
+.three_bar .center .newsMain .newsModule .news_right .author em::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url(../image/NewsModule/head1.jpg);
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.three_bar .center .newsMain .time {
+    color: #696969;
+    font-size: 12px;
+}
+
+.three_bar .center .newsMain .dataBox {
+    position: absolute;
+    bottom: 15px;
+    right: -10px;
+    width: 180px;
+    height: 19px;
+}
+
+.three_bar .center .newsMain .dataBox span img {
+    width: 18px;
+    height: 18px;
+}
+
+.three_bar .center .newsMain .dataBox span em {
+    display: inline-block;
+    font-style: normal;
+    font-size: 12px;
+    color: #696969;
+    vertical-align: 4px;
+    margin-left: -5px;
+    width: 35px;
+    border-right: 1px solid rgb(231, 231, 231);
+    text-align: center;
+}
+
+.three_bar .center .newsMain .dataBox span .lastData {
+    border: none;
+}
+
+
+
+/* 模块二 */
+.three_bar .center .newsMain .newsModule2 {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 660px;
+    height: 102px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.three_bar .center .newsMain .newsModule2 .news_left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 158px;
+    height: 102px;
+}
+
+.three_bar .center .newsMain .newsModule2 .news_left img {
+    width: 158px;
+    height: 102px;
+}
+
+.three_bar .center .newsMain .newsModule2 .news_right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 489px;
+    margin-top: 12px;
+    /* background-color: #ccc; */
+}
+
+.three_bar .center .newsMain .newsModule2 .news_right h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.three_bar .center .newsMain .newsModule2 .news_right .author em::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url(../image/NewsModule/head2.jpg);
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.three_bar .center .newsMain .people_center {
+    position: relative;
+    left: 0;
+}
+
+.three_bar .center .newsMain .people_center .dataBox {
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+}
+
+
+/* 模块三 */
+.three_bar .center .newsMain .newsModule3 {
+    /* position: relative;
+    left: 0;
+    top: 0;*/
+    width: 660px;
+    height: 168px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.three_bar .center .newsMain .newsModule3 h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.three_bar .center .newsMain .newsModule3 .newsPhotos {
+    display: inline-block;
+    width: 154px;
+    height: 102px;
+    margin-left: 9px;
+    margin-bottom: 15px;
+}
+
+.three_bar .center .newsMain .newsModule3 .newsPhotos img {
+    width: 158px;
+    height: 102px;
+}
+
+.three_bar .center .newsMain .newsModule3 .newsPhotos::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #ccc;
+}
+
+.three_bar .center .newsMain .newsModule3 .marginNone {
+    margin: 0;
+}
+
+.three_bar .center .newsMain .newsModule3 .author em::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url(../image/NewsModule/head3.jpg);
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+
+
+
+.footer {
+    width: 100%;
+    height: 296.8px;
+}
+
+.footer .top {
+    width: 1000px;
+    height: 159.4px;
+    padding: 20px 0 0px 80px;
+    margin: 0 auto;
+    /* background-color: #ccc; */
+}
+
+.footer .top .listBox {
+    width: 140px;
+    float: left;
+    margin: 0 70px 0 0;
+
+}
+
+.footer .top .list {
+    display: inline-block;
+    width: 140px;
+}
+
+.footer .top span {
+    display: block;
+    /* float: left; */
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.footer .top .list li {
+    list-style: none;
+    float: left;
+}
+
+.footer .top .list li img {
+    width: 77px;
+    height: 77px;
+}
+
+.footer .top .list li a {
+    font-size: 12px;
+    color: #696969;
+    margin: 0 20px 5px 0;
+}
+
+.footer .top .list li a:hover {
+    color: orange;
+}
+
+.footer .top .codeTitle {
+    width: 220px;
+    display: inline-block;
+}
+
+.footer .top .marginleft {
+    margin-right: 120px;
+}
+
+
+.footer .bottom {
+    width: 100%;
+    /* height: 137.4px; */
+    background-color: #f2f2f5;
+    padding: 20px 0 45px;
+}
+
+
+.footer .bottom .textCenter {
+    width: 1480px;
+    /* background-color: red; */
+    text-align: center;
+
+}
+
+.footer .bottom .textCenter p {
+    margin-bottom: 10px;
+}
+
+.footer .bottom .textCenter p a {
+    margin-left: 20px;
+    font-size: 12px;
+    color: #696969;
+}
+
+.footer .bottom .textCenter p a:hover {
+    color: orange;
+}
+
+.footer .bottom .textCenter .before::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(../image/icon-weibo.png);
+    background-size: 100% 100%;
+    margin-left: 5px;
+    vertical-align: -4px;
+}
+
+.footer .bottom .textCenter .before2::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(../image/icon-guohui.png);
+    background-size: 100% 100%;
+    margin-left: 5px;
+    vertical-align: -4px;
+}
+
+
+.refresh {
+    display: block;
+    position: fixed;
+    right: 137px;
+    bottom: 90px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(194, 192, 192);
+    background-image: url(../image/icon-shuaxin.png);
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.backTop {
+    display: block;
+    position: fixed;
+    right: 137px;
+    bottom: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(194, 192, 192);
+    background-image: url(../image/icon-huiding.png);
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.refresh:hover {
+    background-color: rgba(76, 72, 72, 0.651);
+}
+
+.backTop:hover {
+    background-color: rgba(76, 72, 72, 0.651);
+}
+
+
+.unreadTop {
+    position: fixed;
+    top: 50px;
+    left: 45%;
+    margin-left: -104px;
+    width: 208px;
+    height: 36px;
+    background-color: #fffdec;
+    line-height: 36px;
+    border-radius: 3px;
+    text-align: center;
+    display: none;
+    z-index: 5;
+}
+
+.unreadTop a {
+    font-size: 14px;
+    color: #ed7350;
+}
+
+.unreadTop .black {
+    color: #696969;
+    vertical-align: 1px;
+}
+
+.unreadTop .black:hover {
+    color: red;
+}
